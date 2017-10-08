@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [test.com.sizonenko.sphereapp.action.SphereActionTest]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="test.com.sizonenko.sphereapp.action.SphereActionTest">
+        <methods>
+          <include name="falseVSphereAction"/>
+          <include name="ClearSphereAction"/>
+          <include name="falseSizeMapCreateSphereAction"/>
+          <include name="falseRelationsSphereAction"/>
+          <include name="trueRelationsSphereAction"/>
+          <include name="trueTouchSphereAction"/>
+          <include name="trueSizeMapCreateSphereAction"/>
+          <include name="trueAreasSphereAction"/>
+          <include name="trueVSphereAction"/>
+          <include name="falseAreasSphereAction"/>
+          <include name="falseTouchSphereAction"/>
+        </methods>
+      </class> <!-- test.com.sizonenko.sphereapp.action.SphereActionTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [test.com.sizonenko.sphereapp.action.SphereActionTest] -->
