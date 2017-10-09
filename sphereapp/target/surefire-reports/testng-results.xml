@@ -2,25 +2,29 @@
 <testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="test.com.sizonenko.sphereapp.action.SphereActionTest" duration-ms="302" started-at="2017-10-08T18:49:11Z" finished-at="2017-10-08T18:49:11Z">
+  <suite name="test.com.sizonenko.sphereapp.action.SphereActionTest" duration-ms="313" started-at="2017-10-09T12:27:03Z" finished-at="2017-10-09T12:27:04Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="302" started-at="2017-10-08T18:49:11Z" finished-at="2017-10-08T18:49:11Z">
+    <test name="Command line test" duration-ms="313" started-at="2017-10-09T12:27:03Z" finished-at="2017-10-09T12:27:04Z">
       <class name="test.com.sizonenko.sphereapp.action.SphereActionTest">
-        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="CreateSphereAction" duration-ms="235" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="234" started-at="2017-10-09T15:27:03Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CreateSphereAction -->
-        <test-method status="PASS" signature="WrongCreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="WrongCreateSphereAction" duration-ms="0" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="WrongCreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="WrongCreateSphereAction" duration-ms="16" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <exception class="java.lang.RuntimeException">
             <message>
               <![CDATA[file not found or clear: mparameters.txt]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.RuntimeException: file not found or clear: mparameters.txt
-	at com.sizonenko.sphereapp.file.ReadFile.getDataSphere(ReadFile.java:47)
+	at com.sizonenko.sphereapp.file.ReadFile.getDataSphere(ReadFile.java:48)
 	at com.sizonenko.sphereapp.action.SphereAction.<init>(SphereAction.java:20)
-	at test.com.sizonenko.sphereapp.action.SphereActionTest.WrongCreateSphereAction(SphereActionTest.java:28)
+	at test.com.sizonenko.sphereapp.action.SphereActionTest.WrongCreateSphereAction(SphereActionTest.java:30)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,50 +64,94 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- WrongCreateSphereAction -->
-        <test-method status="PASS" signature="falseAreasSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="falseAreasSphereAction" duration-ms="15" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- falseAreasSphereAction -->
-        <test-method status="PASS" signature="falseRelationsSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="falseRelationsSphereAction" duration-ms="0" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- falseRelationsSphereAction -->
-        <test-method status="PASS" signature="falseSizeMapCreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="falseSizeMapCreateSphereAction" duration-ms="12" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="falseCalculateRelationsSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="falseCalculateRelationsSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- falseCalculateRelationsSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="falseCalculateVSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="falseCalculateVSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- falseCalculateVSphereAction -->
+        <test-method status="PASS" signature="falseCalculateAreasSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="falseCalculateAreasSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- falseCalculateAreasSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="15" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="falseCalculateTouchSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="falseCalculateTouchSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- falseCalculateTouchSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="falseSizeMapCreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="falseSizeMapCreateSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- falseSizeMapCreateSphereAction -->
-        <test-method status="PASS" signature="falseTouchSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="falseTouchSphereAction" duration-ms="4" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        <test-method status="PASS" signature="trueCalculateAreasSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="trueCalculateAreasSphereAction" duration-ms="16" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- falseTouchSphereAction -->
-        <test-method status="PASS" signature="falseVSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="falseVSphereAction" duration-ms="4" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- trueCalculateAreasSphereAction -->
+        <test-method status="PASS" signature="trueCalculateRelationsSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="trueCalculateRelationsSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- falseVSphereAction -->
-        <test-method status="PASS" signature="trueAreasSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="trueAreasSphereAction" duration-ms="4" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- trueCalculateRelationsSphereAction -->
+        <test-method status="PASS" signature="trueCalculateVSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="trueCalculateVSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- trueAreasSphereAction -->
-        <test-method status="PASS" signature="trueRelationsSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="trueRelationsSphereAction" duration-ms="0" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- trueCalculateVSphereAction -->
+        <test-method status="PASS" signature="trueCalculateTouchSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="trueCalculateTouchSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- trueRelationsSphereAction -->
-        <test-method status="PASS" signature="trueSizeMapCreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="trueSizeMapCreateSphereAction" duration-ms="4" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- trueCalculateTouchSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- trueSizeMapCreateSphereAction -->
-        <test-method status="PASS" signature="trueTouchSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="trueTouchSphereAction" duration-ms="12" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- trueTouchSphereAction -->
-        <test-method status="PASS" signature="trueVSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="trueVSphereAction" duration-ms="4" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- trueVSphereAction -->
-        <test-method status="PASS" signature="ClearSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@48140564]" name="ClearSphereAction" is-config="true" duration-ms="0" started-at="2017-10-08T21:49:11Z" finished-at="2017-10-08T21:49:11Z">
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="CreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="CreateSphereAction" is-config="true" duration-ms="16" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateSphereAction -->
+        <test-method status="PASS" signature="ClearSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="ClearSphereAction" is-config="true" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ClearSphereAction -->
+        <test-method status="PASS" signature="trueSizeMapCreateSphereAction()[pri:0, instance:test.com.sizonenko.sphereapp.action.SphereActionTest@27f674d]" name="trueSizeMapCreateSphereAction" duration-ms="0" started-at="2017-10-09T15:27:04Z" finished-at="2017-10-09T15:27:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trueSizeMapCreateSphereAction -->
       </class> <!-- test.com.sizonenko.sphereapp.action.SphereActionTest -->
     </test> <!-- Command line test -->
   </suite> <!-- test.com.sizonenko.sphereapp.action.SphereActionTest -->

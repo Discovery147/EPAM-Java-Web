@@ -11,45 +11,43 @@ import org.apache.log4j.Logger;
 
 public class SphereAction {
 
-    public static final Logger LOGGER = Logger.getLogger(SphereAction.class.getName());
-    private final Map<Point, Sphere> map; // Список элементов, каждый из которых является (Point - Sphere)
-    private final ReadFile reader;
+    public static final Logger LOGGER = Logger.getLogger(SphereAction.class);
+    private final Map<Point, Sphere> MAP; // Список элементов, каждый из которых является (Point - Sphere)
+    private final ReadFile READER;
 
     public SphereAction(String path) {
-        reader = new ReadFile();
-        this.map = reader.getDataSphere(path);
+        READER = new ReadFile();
+        this.MAP = READER.getDataSphere(path);
     }
 
     public Map<Point, Sphere> getMap() {
-        return map;
+        return MAP;
     }
 
     public ReadFile getReader() {
-        return reader;
+        return READER;
     }
 
-    public List getArea() { // Площадь поверхности шара
+    public List calculateArea() { // Площадь поверхности шара
         List<Double> areas = new ArrayList();
-        if (ValidateImportSphere.checkMap(map)) {
-            map.forEach((key, value) -> areas.add(4 * Math.PI * Math.pow(value.getRadius(), 2)));
-            areas.forEach(obj -> ReadFile.LOGGER.debug(obj));
+        if (ValidateImportSphere.checkMap(MAP)) {
+            MAP.forEach((key, value) -> areas.add(4 * Math.PI * Math.pow(value.getRadius(), 2)));
         }
         return areas;
     }
 
-    public List getV() { // Объем шара
+    public List calculateV() { // Объем шара
         List<Double> various = new ArrayList();
-        if (ValidateImportSphere.checkMap(map)) {
-            map.forEach((key, value) -> various.add((4 * Math.PI * Math.pow(value.getRadius(), 3)) / 3));
-            various.forEach(obj -> ReadFile.LOGGER.debug(obj));
+        if (ValidateImportSphere.checkMap(MAP)) {
+            MAP.forEach((key, value) -> various.add((4 * Math.PI * Math.pow(value.getRadius(), 3)) / 3));
         }
         return various;
     }
 
-    public List getRelations(double point) { // Соотношение объемов, полученных рассечением шара коорд. плоскостью (параметр - удаленность перпендикуляра к рассекающей плоскости от центра шара)
+    public List calculateRelations(double point) { // Соотношение объемов, полученных рассечением шара коорд. плоскостью (параметр - удаленность перпендикуляра к рассекающей плоскости от центра шара)
         List<Double> relations = new ArrayList();
-        if (ValidateImportSphere.checkMap(map)) {
-            for (Map.Entry<Point, Sphere> entry : map.entrySet()) {
+        if (ValidateImportSphere.checkMap(MAP)) {
+            for (Map.Entry<Point, Sphere> entry : MAP.entrySet()) {
                 double r = entry.getValue().getRadius();
                 if (point < r || point >= 0) {
                     LOGGER.debug("Point is true: " + point);
@@ -65,9 +63,9 @@ public class SphereAction {
         return relations;
     }
 
-    public List getTouch() { // Касается ли шар оси координат
+    public List calculateTouch() { // Касается ли шар оси координат
         List<Boolean> touch = new ArrayList();
-        for (Map.Entry<Point, Sphere> entry : map.entrySet()) {
+        for (Map.Entry<Point, Sphere> entry : MAP.entrySet()) {
             double r = entry.getValue().getRadius();
             Point point = entry.getKey();
             touch.add((point.getX() - r == 0 || point.getX() + r == 0) ? true

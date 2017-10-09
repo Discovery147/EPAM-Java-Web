@@ -14,9 +14,10 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import org.apache.log4j.Logger;
 
+
 public class ReadFile {
 
-    public static final Logger LOGGER = Logger.getLogger(ReadFile.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(ReadFile.class);
     private Map map;
 
     public Map getDataSphere(String path) {
@@ -33,7 +34,7 @@ public class ReadFile {
                     String line;
                     while ((line = br.readLine()) != null) {
                         if (ValidateImportSphere.isSphere(line)) {
-                            map.put(ValidateImportSphere.getValidatePoint(line), ValidateImportSphere.getValidateSphere(line));
+                            map.put(new ValidateImportSphere().getValidatePoint(line), new ValidateImportSphere().getValidateSphere(line));
                         }
                     }
                 } catch (IOException ex) {

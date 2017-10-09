@@ -2,7 +2,9 @@ package com.sizonenko.sphereapp.entity;
 
 public class Point implements Figure {
 
-    private double x, y, z; //coordinates
+    private double x;
+    private double y;
+    private double z;    //coordinates
 
     public Point() {
     }
